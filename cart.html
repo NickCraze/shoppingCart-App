@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The worlds most affordable online and fictional retailer across the globe. Shopping cart page for Thames Online  "/>
+    <title>Thames Website Shopping Cart</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="img-container">
+      <img
+        class="bg-image"
+        src="./media-assets/bg.jpg"
+        alt="A picture of the Thames river and the London Tower"
+      />
+    </div>
+
+    <img
+      class="logo-image"
+      src="./media-assets/logo.png"
+      alt="The iconic logo of Thames online shopping "
+    />
+
+    <!-- Product Basket Item Container -->
+    <div class="basket-container">
+      <h3 class="heading">Basket</h3>
+      <div class="cart-items">
+        <div class="product-details">
+          <select class="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span class="product-name" data-tax="0.2">Product A</span>
+        </div>
+        <div class="prices">
+          <h5 class="product-price">£20.00</h5>
+          <p class="remove-btn">Remove</p>
+        </div>
+      </div>
+      <div class="cart-items">
+        <div class="product-details">
+          <select class="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span class="product-name" data-tax="0.1">Product B</span>
+        </div>
+        <div class="prices">
+          <h5 class="product-price">£18.17</h5>
+          <p class="remove-btn">Remove</p>
+        </div>
+      </div>
+      <div class="cart-items">
+        <div class="product-details">
+          <select class="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span class="product-name" data-tax=0.05>Product C</span>
+        </div>
+        <div class="prices">
+          <h5 class="product-price">£28.52</h5>
+          <p class="remove-btn">Remove</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Summary and Total Container -->
+
+    <div class="order-summary">
+      <h3 class="heading">Order Summary</h3>
+      <div class="data summary-items">
+        <h4>Items</h4>
+        <h4 class="total-items">£0</h4>
+      </div>
+      <div class="data summary-items">
+        <h4>Tax</h4>
+        <h4 class="total-tax">£0</h4>
+      </div>
+      <div class="data summary-items">
+        <h4>Shipping</h4>
+        <h4 class="total-shipping">£0</h4>
+      </div>
+      <div class="data summary-items">
+        <h4>Sub Total</h4>
+        <h4 class="total-subTotal">£0</h4>
+      </div>
+      <div class="purchase">
+        <button id="purchase-btn">Buy now</button>
+      </div>
+    </div>
+
+    <!-- Buy Now button Thank you Msg  --set to display:none -->
+    <div class="purchase-success">Thanks for shopping with us!</div>
+
+    <script src="./shoppingCart.js"></script>
+  </body>
+</html>
