@@ -101,7 +101,7 @@ function jsLoaded() {
     if (total > 150) {
       totalShipping = 0;
     } else if (total * 0.15 >= 15) {
-      totalShipping = (total * 0.15).toFixed(2);
+      totalShipping = total * 0.15;
     } else if (total * 0.15 <= 15 && total !== 0) {
       totalShipping = 15;
     } else {
@@ -115,7 +115,8 @@ function jsLoaded() {
     // Append calculated totals to Dom Elements and display them in Order-summary totals
     document.querySelector(".total-items").innerText = "£" + roundedTotal;
     document.querySelector(".total-tax").innerText = "£" + roundedTotalTax;
-    document.querySelector(".total-shipping").innerText = "£" + totalShipping;
+    document.querySelector(".total-shipping").innerText =
+      "£" + totalShipping.toFixed(2);
     document.querySelector(".total-subTotal").innerText = "£" + totalSubTotal;
   }
 }
